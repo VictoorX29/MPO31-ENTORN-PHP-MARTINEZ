@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#carta{
+    width: 500px;
+    height: 60%;
+    border-radius: 25%;
+    background-color: #B3EBF2;
+}

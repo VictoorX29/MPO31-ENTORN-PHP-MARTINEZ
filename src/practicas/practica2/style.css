@@ -1,0 +1,32 @@
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.containerDivs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 8px;
+}
+.containerDivs div {
+  border: 2px ridge orangered;
+  margin: 0 auto;
+  padding-inline: 8px;
+  padding-block: 4px;
+}
+.containerDivsMult {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+}
+.containerDivsMult div {
+  text-align: center;
+  border-radius: 16px;
+}
+.par {
+  padding: 8px;
+  background-color: red;
+}
+.impar {
+  padding: 8px;
+  background-color: #0000ff;
+}
