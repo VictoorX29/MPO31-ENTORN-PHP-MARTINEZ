@@ -2,7 +2,7 @@
 $peliculas = [
     [
         "nombre"       => "La Odisea",
-        "imagen"       => "https://placehold.co/300x450?text=La+Odisea",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BNjlkNDYxNmUtNzY1MS00MmZhLTk4NjUtZWMxMTk5MWQzNDgwXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
         "horarios"     => ["16:00", "19:15", "22:30"],
         "sinopsi"      => "Adaptación del poema épico de Homero: el largo y peligroso viaje de Ulises de regreso a Ítaca tras la guerra de Troya.",
         "duracion"     => "170 min",
@@ -10,11 +10,11 @@ $peliculas = [
         "reparto"      => ["Matt Damon", "Tom Holland", "Anne Hathaway", "Zendaya", "Robert Pattinson"],
         "calificacion" => "+12",
         "genero"       => "Aventura / Épico",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=La+Odisea+Nolan+trailer+oficial"
+        "parametroEmbed"   => "X9nUrOnHlz0"
     ],
     [
         "nombre"       => "Spider-Man: Brand New Day",
-        "imagen"       => "https://placehold.co/300x450?text=Spider-Man",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BYmYwNGUwZWQtMTcyZC00ZjAxLThmZWEtMTY1OTIwZmI5YjBmXkEyXkFqcGc@._V1_.jpg",
         "horarios"     => ["17:00", "20:00", "22:45"],
         "sinopsi"      => "Peter Parker intenta rehacer su vida mientras una nueva amenaza aparece en Nueva York.",
         "duracion"     => "130 min",
@@ -22,11 +22,11 @@ $peliculas = [
         "reparto"      => ["Tom Holland", "Zendaya", "Jon Bernthal", "Sadie Sink", "Mark Ruffalo"],
         "calificacion" => "+12",
         "genero"       => "Acción / Superhéroes",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=Spider-Man+Brand+New+Day+trailer+oficial"
+        "parametroEmbed"   => "owfWVJoxXR4"
     ],
     [
         "nombre"       => "Supergirl",
-        "imagen"       => "https://placehold.co/300x450?text=Supergirl",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BY2RhODkwZjAtZDE1NC00ODRhLWE2MjItZThhYTQxYTU0Nzk3XkEyXkFqcGc@._V1_.jpg",
         "horarios"     => ["16:30", "19:30", "22:15"],
         "sinopsi"      => "Kara Zor-El se embarca en un viaje espacial que la obliga a enfrentarse a su pasado y a su identidad.",
         "duracion"     => "120 min",
@@ -34,11 +34,11 @@ $peliculas = [
         "reparto"      => ["Milly Alcock", "David Corenswet", "Jason Momoa"],
         "calificacion" => "+12",
         "genero"       => "Ciencia ficción / Superhéroes",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=Supergirl+DC+trailer+oficial"
+        "parametroEmbed"   => "rjT2Naumaoo"
     ],
     [
         "nombre"       => "Toy Story 5",
-        "imagen"       => "https://placehold.co/300x450?text=Toy+Story+5",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BOTkzOWVhYTAtM2MzMS00YmIxLWJhMjYtMzBhNThiYmEwMTYwXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg",
         "horarios"     => ["16:00", "18:00", "20:00"],
         "sinopsi"      => "Woody, Buzz y el resto de juguetes se enfrentan a un nuevo reto: la tecnología compite por la atención de Bonnie.",
         "duracion"     => "100 min",
@@ -46,11 +46,11 @@ $peliculas = [
         "reparto"      => ["Tom Hanks", "Tim Allen", "Joan Cusack"],
         "calificacion" => "TP",
         "genero"       => "Animación / Familiar",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=Toy+Story+5+trailer+oficial"
+        "parametroEmbed"   => "w56cHtfyGT8"
     ],
     [
         "nombre"       => "La bola negra",
-        "imagen"       => "https://placehold.co/300x450?text=La+bola+negra",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BYTY5NWVlOGYtYWIyYi00OGMwLTk2ZWItYTRlZWU5NDU0ZWYxXkEyXkFqcGc@._V1_FMjpg_UX910_.jpg",
         "horarios"     => ["17:30", "20:15", "22:30"],
         "sinopsi"      => "Inspirada en la obra inacabada de Federico García Lorca, cruza historias de distintas épocas unidas por la lucha por vivir con libertad.",
         "duracion"     => "130 min",
@@ -58,11 +58,11 @@ $peliculas = [
         "reparto"      => ["Penélope Cruz", "Glenn Close", "Guitarricadelafuente"],
         "calificacion" => "+16",
         "genero"       => "Drama",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=La+bola+negra+Los+Javis+trailer"
+        "parametroEmbed"   => "lBVxKt0gKDY"
     ],
     [
         "nombre"       => "Scary Movie 6",
-        "imagen"       => "https://placehold.co/300x450?text=Scary+Movie+6",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BMzUyNDNhNmUtZWZmYy00OGY4LWEwMjgtZGJlZTA3ZTY2MTY0XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
         "horarios"     => ["18:00", "20:30", "22:45"],
         "sinopsi"      => "Cindy, Brenda, Shorty y Ray vuelven a ser el objetivo de un asesino enmascarado en una nueva parodia del terror actual.",
         "duracion"     => "90 min",
@@ -70,11 +70,11 @@ $peliculas = [
         "reparto"      => ["Anna Faris", "Regina Hall"],
         "calificacion" => "+16",
         "genero"       => "Comedia / Parodia",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=Scary+Movie+6+trailer+oficial"
+        "parametroEmbed"   => "kLZ7PGp7ZL0"
     ],
     [
         "nombre"       => "Super Mario Galaxy: La película",
-        "imagen"       => "https://placehold.co/300x450?text=Super+Mario+Galaxy",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BNTRkODc0MmItYzQ2NS00MGU3LTkwMTUtMGRmZjMwODNiNmI0XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
         "horarios"     => ["16:15", "18:15", "20:15"],
         "sinopsi"      => "Mario y Luigi viajan al espacio en una nueva aventura galáctica para rescatar a la princesa Peach.",
         "duracion"     => "100 min",
@@ -82,11 +82,11 @@ $peliculas = [
         "reparto"      => ["Chris Pratt", "Anya Taylor-Joy", "Charlie Day", "Jack Black"],
         "calificacion" => "TP",
         "genero"       => "Animación / Aventura",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=Super+Mario+Galaxy+pelicula+trailer"
+        "parametroEmbed"   => "Hz57G2KaAp8"
     ],
     [
         "nombre"       => "Michael",
-        "imagen"       => "https://placehold.co/300x450?text=Michael",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BYmMzNTNkOGYtYWViYy00ZmI2LWJjZDQtODhhNTA4NmRjNmE0XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
         "horarios"     => ["17:45", "20:30", "22:50"],
         "sinopsi"      => "Biopic sobre la vida y la carrera de Michael Jackson, desde sus inicios con los Jackson 5 hasta convertirse en el Rey del Pop.",
         "duracion"     => "130 min",
@@ -94,11 +94,11 @@ $peliculas = [
         "reparto"      => ["Jaafar Jackson", "Colman Domingo", "Nia Long", "Miles Teller"],
         "calificacion" => "+12",
         "genero"       => "Biopic / Música",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=Michael+Jackson+pelicula+trailer+oficial"
+        "parametroEmbed"   => "o1HQSh6zZ8s"
     ],
     [
         "nombre"       => "Mortal Kombat II",
-        "imagen"       => "https://placehold.co/300x450?text=Mortal+Kombat+II",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BZDI1ODhkZWYtM2Q2NS00MmI4LTg3NzUtYTM3NTBlYmQ3NzM3XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
         "horarios"     => ["19:00", "21:30", "23:00"],
         "sinopsi"      => "Los guerreros de la Tierra regresan al torneo definitivo contra las fuerzas de Outworld.",
         "duracion"     => "115 min",
@@ -106,11 +106,11 @@ $peliculas = [
         "reparto"      => ["Karl Urban", "Jessica McNamee", "Adeline Rudolph", "Lewis Tan"],
         "calificacion" => "+16",
         "genero"       => "Acción / Fantasía",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=Mortal+Kombat+II+trailer+oficial"
+        "parametroEmbed"   => "nUfwLpIiWCU"
     ],
     [
         "nombre"       => "The Mandalorian & Grogu",
-        "imagen"       => "https://placehold.co/300x450?text=Mandalorian+%26+Grogu",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BMjcyZGYwOGYtZjczZi00NjI1LWJhZTgtYmU1YmQzZGE5YmM3XkEyXkFqcGc@._V1_FMjpg_UX540_.jpg",
         "horarios"     => ["16:45", "19:30", "22:00"],
         "sinopsi"      => "Din Djarin y Grogu emprenden una nueva misión en una galaxia muy, muy lejana, ahora en la gran pantalla.",
         "duracion"     => "130 min",
@@ -118,11 +118,11 @@ $peliculas = [
         "reparto"      => ["Pedro Pascal", "Sigourney Weaver", "Jeremy Allen White"],
         "calificacion" => "+12",
         "genero"       => "Ciencia ficción / Aventura",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=The+Mandalorian+and+Grogu+trailer+oficial"
+        "parametroEmbed"   => "IHWlvwu8t1w"
     ],
     [
         "nombre"       => "Cumbres borrascosas",
-        "imagen"       => "https://placehold.co/300x450?text=Cumbres+borrascosas",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BOTZkNTNkNjgtNTk2Yy00NTY1LWEyZjctZWFiZTU0MTVhMTM0XkEyXkFqcGc@._V1_FMjpg_UX960_.jpg",
         "horarios"     => ["17:15", "20:00", "22:30"],
         "sinopsi"      => "Nueva adaptación de la novela de Emily Brontë sobre la pasión destructiva entre Catherine y Heathcliff.",
         "duracion"     => "135 min",
@@ -130,11 +130,11 @@ $peliculas = [
         "reparto"      => ["Margot Robbie", "Jacob Elordi"],
         "calificacion" => "+16",
         "genero"       => "Drama / Romance",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=Cumbres+borrascosas+2026+trailer"
+        "parametroEmbed"   => "RNynG8dMp5w"
     ],
     [
         "nombre"       => "Hamnet",
-        "imagen"       => "https://placehold.co/300x450?text=Hamnet",
+        "imagen"       => "https://m.media-amazon.com/images/M/MV5BZDM5Y2Q1ZjAtODIzYi00ZTcwLWE4MWQtNmMyNjE1ZTZkY2JkXkEyXkFqcGc@._V1_FMjpg_UX1013_.jpg",
         "horarios"     => ["16:30", "19:00", "21:30"],
         "sinopsi"      => "La historia de la familia de William Shakespeare y del duelo que inspiró la creación de Hamlet.",
         "duracion"     => "125 min",
@@ -142,6 +142,6 @@ $peliculas = [
         "reparto"      => ["Jessie Buckley", "Paul Mescal"],
         "calificacion" => "+12",
         "genero"       => "Drama / Histórico",
-        "trailerURL"   => "https://www.youtube.com/results?search_query=Hamnet+pelicula+trailer"
+        "parametroEmbed"   => "Ith7z6FzLe0"
     ],
 ];

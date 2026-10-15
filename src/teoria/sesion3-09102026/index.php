@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-
+    /** @var array $proyectos */
     require_once("04-multidimensional.php");
     
 
