@@ -1,6 +1,7 @@
 <?php
 $nombre = (isset($_POST["nombre"]) && $_POST["nombre"]!=='' ? $_POST["nombre"] : "Alumno");
 $fotoUsuario = (isset($_POST["urlFoto"]) && $_POST["urlFoto"]!== '' ? $_POST["urlFoto"] : "https://i.pinimg.com/originals/13/74/20/137420f5b9c39bc911e472f5d20f053e.jpg?nii=t");
+$telefono = (isset($_POST["telefono"]) && $_POST["telefono"]!=='' ? $_POST["telefono"] : '000 00 00 00')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +53,7 @@ $fotoUsuario = (isset($_POST["urlFoto"]) && $_POST["urlFoto"]!== '' ? $_POST["ur
 
                     </div>
                     <div class="modal-body">
-                        <!-- AQUI VA LA INFORMACIÓN DE CONTACTO -->
+                        <?= muestraInfoContacto($nombre, $telefono, $fotoUsuario) ?>
                     </div>
 
                 </div>
@@ -67,8 +68,7 @@ $fotoUsuario = (isset($_POST["urlFoto"]) && $_POST["urlFoto"]!== '' ? $_POST["ur
 
         <!-- aqui va un footer -->
     </div>
-
-
+    <?php include("includes/footer.php") ?>
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

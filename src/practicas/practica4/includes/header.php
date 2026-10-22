@@ -4,8 +4,8 @@
 ?>
 <header class="navbar navbar-expand-lg navbar-light bg-light mb-5">
     <div class="container-fluid d-flex justify-content-between">
-        <a class="navbar-brand" href="index.php">
-            <img src="logo-mercadona" alt="logo-mercadona" class="img-fluid" style="height: 50px;">
+        <a class="navbar-brand" href="inicio.php">
+            <img src="https://www.mercadona.es/static/media/mercadona-logo.eb29e4fb72153a8f9e49.svg" alt="logo-mercadona" class="img-fluid" style="height: 50px;">
         </a>
         <div>
             <div class="d-flex align-items-center">

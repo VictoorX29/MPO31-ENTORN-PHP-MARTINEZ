@@ -1,37 +1,54 @@
 <?php
-function generarTablaProductos(array $productos){
-//   <thead>
-//     <tr>
-//       <th scope="col">#</th>
-//       <th scope="col">First</th>
-//       <th scope="col">Last</th>
-//       <th scope="col">Handle</th>
-//     </tr>
-//   </thead>
-//   <tbody>
-//     <tr>
-//       <th scope="row">1</th>
-//       <td>Mark</td>
-//       <td>Otto</td>
-//       <td>@mdo</td>
-//     </tr>
-//     <tr>
-//       <th scope="row">2</th>
-//       <td>Jacob</td>
-//       <td>Thornton</td>
-//       <td>@fat</td>
-//     </tr>
-//     <tr>
-//       <th scope="row">3</th>
-//       <td>Larry</td>
-//       <td>the Bird</td>
-//       <td>@twitter</td>
-//     </tr>
-//   </tbody>
-// </table>
-    foreach($productos as $id=>$producto){
-        
+function generarTablaProductos(array $productos){ ?>
+<table class="table table-striped table-hover">
+    <thead>
+     <tr>
+       <th scope="col">#</th>
+       <?php foreach($productos[0] as $clave => $valor):?>
+        <td><?= $clave ?></td>
+       <?php endforeach; ?>
+     </tr>
+   </thead>
+   <tbody>
+     <?php foreach($productos as $id => $producto): ?>
+        <tr <?= ($producto["Disponibilidad"] ? "" : "class='table-danger'") ?>>
+            <td><?= $id ?></td>
+            <td><?= $producto["Nombre"] ?></td>
+            <td><?= $producto["Descripcion"] ?></td>
+            <td><?= $producto["Precio"] ?></td>
+            <td class="table-<?= definirCategoria($producto["Categoria"]) ?>"><?= $producto["Categoria"] ?></td>
+            <td><?= ($producto["Disponibilidad"] ? "En stock" : "Agotado") ?></td>
+        </tr>
+     <?php endforeach; ?>
+   </tbody>
+ </table>
+<?php }
+
+function muestraInfoContacto(string $nombre, string $telefono, string $foto){ ?>
+<div class="d-flex flex-column align-items-center text-center">
+    <img class="w-50 img-fluid rounded-circle" src="<?= $foto ?>" alt="Foto de Perfil">
+    <p><?= $nombre ?></p>
+    <small><?= $telefono ?></small>
+</div>
+
+<?php }
+
+function definirCategoria($categoria){
+    switch ($categoria) {
+        case 'Lacteos':
+            return "primary";
+        case 'Panaderia':
+            return "warning";
+        case 'Despensa':
+            return "secondary";
+        case 'Frutas':
+            return "success";
+        case 'Verduras':
+            return "info";
+        case 'Bebidas':
+            return "dark";
+        default:
+            return "";
     }
-    return $html;
 }
 ?>
