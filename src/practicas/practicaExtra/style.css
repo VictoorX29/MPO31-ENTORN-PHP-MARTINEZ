@@ -1,0 +1,87 @@
+main {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+.divContens {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+	justify-content: center;
+}
+.divColaConte {
+	display: flex;
+	gap: 12px;
+}
+.divConteAct {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 150px;
+	height: fit-content;
+	padding-inline: 12px;
+	border-radius: 8px;
+	border: 3px solid;
+	font-size: larger;
+	font-weight: bold;
+}
+.divConteAct img {
+	width: 100%;
+	height: auto;
+}
+.divConteCola {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100px;
+	height: fit-content;
+	padding-inline: 12px;
+	border-radius: 8px;
+	border: 3px solid;
+	font-size: larger;
+	font-weight: bold;
+}
+.divConteCola img {
+	width: 100%;
+	height: auto;
+}
+.btnConte {
+	width: 100px;
+	height: 30px;
+	border: 2px solid;
+	border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btnReinConte {
+	width: 150px;
+	height: 50px;
+	font-size: medium;
+	border-color: crimson;
+	background-color: lightcoral;
+	color: red;
+}
+.divBtnConte {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.plastico {
+	border-color: yellow;
+	background-color: lightyellow;
+}
+.carton {
+	border-color: blue;
+	background-color: lightblue;
+}
+.organico {
+	border-color: red;
+	background-color: lightcoral;
+}
+.vidrio {
+	border-color: green;
+	background-color: lightgreen;
+}
