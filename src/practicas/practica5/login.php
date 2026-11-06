@@ -8,12 +8,23 @@ $usuarios = [
 ];
 
 // Procesamiento del formulario.
-
+    if($_SERVER["REQUEST_METHOD"] === "POST"){
+        $nombre = $_POST["username"] ?? "";
+        $contra = $_POST["password"] ?? "";
+        foreach ($usuarios as $id=>$usuario){
+            if($nombre == $usuario["username"] && $contra == $usuario["password"]){
+                $_SESSION["username"] = $usuario["username"];
+                $_SESSION["role"] = $usuario["role"];
+                $_SESSION["photo"] = $_POST["photo"];
+                header("Location: home.php");
+                exit;
+            }else{
+                $error = "Usuario o contraseña incorrectos";
+            }
+        }
+    }
 
     // Validación de credenciales.
-   
-  
-
 ?>
 
 <!DOCTYPE html>
@@ -36,17 +47,17 @@ $usuarios = [
         <div class="signin">
             <div class="content text-center">
                 <h2>Inicia sesión</h2>
-                <form method="xxxxx" action="login.php">
+                <form method="post" action="login.php">
                     <div class="inputBox ">
-                        <input class="p-2 m-2" placeholder="Username" type="text" name="" required>
+                        <input class="p-2 m-2" placeholder="Username" type="text" name="username" required>
                        
                     </div>
                     <div class="inputBox ">
-                        <input class="p-2 m-2" placeholder="Password" type="password" name="" required>
+                        <input class="p-2 m-2" placeholder="Password" type="password" name="password" required>
                        
                     </div>
                     <div class="inputBox ">
-                        <input class="p-2 m-2" placeholder="Foto de perfil" type="text" name="" required>
+                        <input class="p-2 m-2" placeholder="Foto de perfil" type="text" name="photo" required>
                        
                     </div>
                     <?php if (!empty($error)) : ?>
