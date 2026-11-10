@@ -4,7 +4,7 @@ if(!isset($_SESSION["contenedores"])){
     $_SESSION["contenedores"] = [
         "carton" => [
             "cont" => 0,
-            "texto" => "Cartón",    
+            "texto" => "Cartón",
         ],
         "organico" => [
             "cont" => 0,
@@ -20,7 +20,7 @@ if(!isset($_SESSION["contenedores"])){
         ] 
     ];
     $_SESSION["camion"] = 0;
-    $_SESSION["basura"] = [];
+    $_SESSION["colaBasura"] = [];
 }
 if(isset($_GET["reiniciar"])){
     session_destroy();
@@ -45,8 +45,10 @@ if(isset($_GET["conte"])){
     $_SESSION["camion"] = 0;
 }
 if(isset($_SESSION["rand"])){
-    array_push($_SESSION["basura"],$_SESSION["rand"]);
-    var_dump($_SESSION["basura"]);
+    if(count($_SESSION["colaBasura"])>=4){
+        array_shift($_SESSION["colaBasura"]);
+    }
+    array_push($_SESSION["colaBasura"],$_SESSION["rand"]);
 }
 ?>
 <!DOCTYPE html>
@@ -75,22 +77,16 @@ if(isset($_SESSION["rand"])){
             </div>
             
             <div class="divColaConte">
-                <div class="divConteCola plastico">
-                    <img src="images/contenedores/plastico.png" alt="Contenedor Plástico">
-                    <p>Plástico</p>
-                </div>
-                <div class="divConteCola plastico">
-                    <img src="images/contenedores/plastico.png" alt="Contenedor Plástico">
-                    <p>Plástico</p>
-                </div>
-                <div class="divConteCola plastico">
-                    <img src="images/contenedores/plastico.png" alt="Contenedor Plástico">
-                    <p>Plástico</p>
-                </div>
-                <div class="divConteCola plastico">
-                    <img src="images/contenedores/plastico.png" alt="Contenedor Plástico">
-                    <p>Plástico</p>
-                </div>
+                <?
+                    foreach($_SESSION["colaBasura"] as $basura){
+                        ?>
+                        <div class="divConteCola <?= $basura ?>">
+                            <img src="images/contenedores/<?= $basura ?>.png" alt="Contenedor Plástico">
+                            <p><?= $_SESSION["contenedores"][$basura]["texto"] ?></p>
+                        </div>
+                    <?
+                    }
+                ?>
             </div>
 
         </div>
