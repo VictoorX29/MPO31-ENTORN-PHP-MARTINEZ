@@ -24,7 +24,7 @@ $primo=0;
                     <?php endif; ?>
                 <?php endfor;?>
             </div>
-            <p><?=$rand ?><?=($primo==1 ? " sí es primo" : " no es primo")?></p>
+            <p class="<?= ($primo==1 ? "primo" : "noPrimo") ?>"><?=$rand ?><?=($primo==1 ? " sí es primo" : " no es primo")?></p>
         </div>
     </main>
 </body>

@@ -1,32 +1,126 @@
+html {
+	scrollbar-width: none;
+}
 main {
-  max-width: 1000px;
-  margin: 0 auto;
+	max-width: 1080px;
+	margin: 0 auto;
 }
 .containerDivs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 8px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+	gap: 8px;
 }
 .containerDivs div {
-  border: 2px ridge orangered;
-  margin: 0 auto;
-  padding-inline: 8px;
-  padding-block: 4px;
+	border: 2px ridge orangered;
+	margin: 0 auto;
+	padding-inline: 8px;
+	padding-block: 4px;
 }
 .containerDivsMult {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 8px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 8px;
 }
 .containerDivsMult div {
-  text-align: center;
-  border-radius: 16px;
+	text-align: center;
+	border-radius: 16px;
+}
+.containerEx4 {
+	text-align: center;
+}
+.containerDivisores {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+}
+.numbDivis {
+	margin: 0;
+	background-color: #badfe5;
+	padding-block: 16px;
+	padding-inline: 12px;
+	border: 1px solid #a8bbcb;
+	border-radius: 4px;
+}
+.primo {
+	color: green;
+}
+.noPrimo {
+	color: red;
 }
 .par {
-  padding: 8px;
-  background-color: red;
+	padding: 8px;
+	background-color: red;
 }
 .impar {
-  padding: 8px;
-  background-color: #0000ff;
+	padding: 8px;
+	background-color: #0000ff;
+}
+.temperatures {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 24px;
+	row-gap: 12px;
+}
+.divTemp {
+	text-align: center;
+	border-radius: 12px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	padding-block: 16px;
+	gap: 12px;
+}
+.divTemp h3 {
+	font-size: 24px;
+}
+.divTemp h3,
+.divTemp p {
+	padding: 0;
+	margin: 0;
+}
+.fred {
+	background-color: #316cf4;
+	color: white;
+}
+.calor {
+	background-color: #cb444a;
+	color: white;
+}
+.suau {
+	background-color: #f5c344;
+}
+.mitjanaTemp {
+	font-weight: bolder;
+	text-align: center;
+}
+.gridExs {
+	padding: 24px;
+	background-color: #5fa8b5;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	border-radius: 8px;
+}
+.divEx h2,
+.divEx a {
+	margin: 0;
+}
+.divEx {
+	padding: 12px;
+	background-color: #badfe5;
+	border: 1px solid #a8bbcb;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	border-radius: 12px;
+}
+.divEx a {
+	text-decoration: none;
+	color: black;
+}
+.divEx a:hover {
+	color: -webkit-link;
+}
+.divEx a:active {
+	color: -webkit-activelink;
 }
