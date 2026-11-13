@@ -1,3 +1,12 @@
+<?php
+session_start();
+if($_SESSION["role"]!="admin"){
+    header("Location: home.php");
+}
+if($_SERVER["REQUEST_METHOD"] == "post"){
+    echo isset($_POST["id"]);
+}
+?>
 <!-- AQUI VA LA LÓGICA PHP  -->
 <!DOCTYPE html>
 <html lang="es">
@@ -5,19 +14,21 @@
     <meta charset="UTF-8">
     <title>Biblioteca Virtual</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Encabezado del formulario -->
     <header class="bg-light py-3 mb-4 shadow-sm">
         <div class="container d-flex align-items-center justify-content-between">
             <div>
-                <h4 class="m-0">👋 Bienvenido, NOMBRE DE USUARIO</h4>
-                <p class="text-muted m-0"><i class="fas fa-user-shield text-success"></i> ROL ADMIN O ROL LECTOR???</p>
+                <h4 class="m-0">👋 Bienvenido, <?= $_SESSION["username"] ?></h4>
+                <p class="text-muted m-0">
+                    <i class="fas fa-user-shield text-success"></i> 
+                <?= $_SESSION["role"] ?></p>
             </div>
             <a href="home.php" class="btn btn-secondary btn-sm">
-                <i class="fas fa-arrow-left"></i> Volver a la Biblioteca
-            </a>
+                <i class="fas fa-arrow-left"></i> 
+            Volver a la Biblioteca</a>
         </div>
     </header>
 
@@ -28,25 +39,27 @@
         </div>
 
         <!-- Formulario para agregar o editar libro. DEPENDIENDO DE SI SE AÑADE O SE EDITA CAMBIARÁN COSA DEL FORMULARIO, USA TERNARIOS SON MUY ÚTILES-->
-        <form method="POST" class="mx-auto" style="max-width: 600px;">
+        <form method="post" class="mx-auto" style="max-width: 600px;">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="titulo" name="titulo" value="" placeholder="Título" required>
+                <input type="text" class="form-control" id="titulo" name="titulo" value="<?= (isset($_GET["id"]) ? $_SESSION["libros"][$_GET["id"]-1]["titulo"] : "") ?>" placeholder="Título" required>
                 <label for="titulo">Título</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="autor" name="autor" value="" placeholder="Autor" required>
+                <input type="text" class="form-control" id="autor" name="autor" value="<?= (isset($_GET["id"]) ? $_SESSION["libros"][$_GET["id"]-1]["autor"] : "") ?>" placeholder="Autor" required>
                 <label for="autor">Autor</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="imagen" name="imagen" value="" placeholder="URL de la Imagen">
+                <input type="text" class="form-control" id="imagen" name="imagen" value="<?= (isset($_GET["id"]) ? $_SESSION["libros"][$_GET["id"]-1]["imagen"] : "") ?>" placeholder="URL de la Imagen">
                 <label for="imagen">URL de la Imagen</label>
             </div>
             <div class="form-floating mb-4">
-                <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Descripción" style="height: 150px;"><?= $descripcion ?></textarea>
+                <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Descripción" style="height: 150px;"><?= (isset($_GET["id"]) ? $_SESSION["libros"][$_GET["id"]-1]["descripcion"] : "") ?></textarea>
                 <label for="descripcion">Descripción</label>
             </div>
             <div class="d-grid">
-                <button type="submit" class="btn btn-primary btn-lg"></button>
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <?= (isset($_GET["id"]) ? "Editar" : "Añadir") ?>
+                </button>
             </div>
         </form>
     </div>
